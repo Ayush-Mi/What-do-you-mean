@@ -1,0 +1,5 @@
+tensorflow==2.9.2
+numpy==1.23.2
+pandas==1.4.4
+tensorflow_hub==0.12.0
+tensorflow_text==2.9.0
