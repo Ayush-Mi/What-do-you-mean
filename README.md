@@ -8,6 +8,8 @@ The model uses BERT-en with 12 headers to generate (None, 768) word embeddings a
 
 After training I tried to compress the model using tensorflow quantization API which reduced the model size to a quarter of its original for Dynamic Range Quantization and to half for Float16 quantization. However, the inference using these compressed models threw error as the operations on the models from tf-hub were not able to execute in tf-lite format.
 
+All of the experiments were performed on Mac-M1 pro with memory of 32gb which currently has many library issues but they can be solved by directly building the required libraries from the source.
+
 ## Dependencies
 The required libraries can be installed from requirements.txt file.
 
